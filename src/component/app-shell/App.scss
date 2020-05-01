@@ -5,13 +5,12 @@
 }
 
 .shell {
-  color: var(--color-font);
   background-color: var(--color-background-dark);
 
   .app-bar {
     background-color: var(--color-background);
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 
     * {
       margin: 16px 0;
