@@ -1,0 +1,20 @@
+@import '../../assets/style/scss/index.scss';
+
+#logo {
+  font-family: 'Google September 2015', sans-serif;
+}
+
+.shell {
+  color: var(--color-font);
+  background-color: var(--color-background-dark);
+
+  .app-bar {
+    background-color: var(--color-background);
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+
+    * {
+      margin: 16px 0;
+    }
+  }
+}
