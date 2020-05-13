@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/style/scss/index.scss';
-import App from './component/app-shell/App';
-import './assets/style/css/tailwind.generated.css';
 import * as serviceWorker from './serviceWorker';
 
-document.documentElement.setAttribute('data-theme', 'light');
+// Component
+import App from './component/App';
+
+// Style
+import './assets/scss/tailwind.generated.scss';
+import './assets/scss/style.scss';
+import './assets/scss/_alexandria.scss';
+
+// Functions
+import { getTheme } from './shared/service/theme';
+import { listenColorScheme } from './core/theme';
+
+// Configure HTML's attributes
+document.documentElement.setAttribute('data-theme', getTheme());
+listenColorScheme();
 
 ReactDOM.render(
   <React.StrictMode>

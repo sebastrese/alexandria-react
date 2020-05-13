@@ -1,0 +1,16 @@
+.appbar {
+    background-color: var(--color-background);
+}
+
+.mobile {
+    button {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+}
+
+.desktop {
+    .list-item {
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,115 @@
+@import './alexandria';
+
+@tailwind base;
+
+@tailwind components;
+
+/* Global */
+.active {
+    @apply bg-indigo text-white transition ease-in duration-200;
+}
+
+.primary {
+    @apply bg-indigo text-indigo bg-opacity-10;
+}
+
+.default {
+    @apply bg-gray-700 text-gray-700 bg-opacity-10;
+}
+
+.bg-mask {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8));
+}
+
+/* Form components */
+.field {
+    @apply rounded-lg py-2 px-4 block w-full appearance-none leading-normal flex flex-row items-center;
+}
+
+.input {
+    @apply bg-gray-400 bg-opacity-10;
+    color: var(--color-font);
+}
+
+.btn {
+    @apply rounded-lg p-1;
+    width: fit-content;
+}
+
+.btn-icon {
+    @apply rounded-full text-2xl w-12 h-12;
+}
+
+.btn:hover {
+    @apply bg-opacity-30 transition ease-in duration-200;
+}
+
+.btn:focus {
+    @apply outline-none shadow-outline transition ease-in duration-200;
+}
+
+.btn:active {
+    @apply outline-none;
+}
+
+/* Layout components */
+.viewport {
+    @apply flex flex-col h-auto w-full min-h-full p-4;
+}
+
+.card {
+    @apply flex flex-col rounded-lg shadow-xl;
+    background-color: var(--color-background);
+}
+
+.card-backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.card-sm {
+    @apply flex-row flex-wrap max-w-sm p-4;
+}
+
+.list-item {
+    @apply flex flex-row items-center rounded-lg p-2 text-gray-700 font-medium cursor-pointer w-full;
+}
+
+.list-item:hover {
+    @apply bg-gray-700 bg-opacity-10 transition ease-in duration-200;
+}
+
+.list-item:focus {
+    @apply outline-none shadow-outline transition ease-in duration-200;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+    .default, .primary {
+        background-color: var(--color-background-light);
+        color: var(--color-font);
+    }
+    
+    .input {
+        @apply bg-opacity-0;
+    }
+
+    .btn-primary:hover {
+        @apply bg-indigo
+    }
+
+    .btn:hover {
+        background-color: var(--color-font);
+        color: var(--color-background);
+    }
+
+    .list-item {
+        color: var(--color-font);
+    }
+    
+    .list-item:hover {
+        background-color: var(--color-background-light);
+    }
+}
+
+@tailwind utilities;
