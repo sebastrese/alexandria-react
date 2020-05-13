@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Alexandria
+The Alexandria Project is an open-source platform where people can share their knowledge through books, podcasts, docs and videos.
 
 ## Available Scripts
 
