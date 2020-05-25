@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
+import { Route } from 'react-router-dom';
 
 // Styles
 import './Shell.scss';
@@ -6,6 +7,7 @@ import './Shell.scss';
 // Component
 import { SearchBar } from '../../shared/component/Bar';
 import { AppBarDesktop, AppBarMobile } from './component/AppBar';
+import { Switch } from 'react-router-dom';
 
 // Lazy-loaded pages
 // TODO: Lazy loading with React lazy breaks layout
@@ -44,9 +46,16 @@ function Shell() {
             <SearchBar type='mobile' onHiddenHandler={() => setToggleSearch(toggleSearch ? false : true)} isHidden={toggleSearch} />
 
             {/** Content - Main Viewport */}
-            <Suspense fallback={HomeSkeleton()}>
-                <Home />
-            </Suspense>
+            <Switch>
+                <Route path='/events'>
+                    <Test></Test>
+                </Route>
+                <Route exact path='/'>
+                    <Suspense fallback={HomeSkeleton()}>
+                        <Home />
+                    </Suspense>
+                </Route>
+            </Switch>
 
             {/** Mobile Appbar */}
             <AppBarMobile isMobile={isMobile} toggleSearchHandler={() => setToggleSearch(toggleSearch ? false : true)} />
@@ -59,6 +68,12 @@ function HomeSkeleton() {
         <div className='flex flex-col items-center justify-center w-full h-full'>
             Loading...
         </div>
+    )
+}
+
+function Test() {
+    return (
+        <div>Events</div>
     )
 }
 

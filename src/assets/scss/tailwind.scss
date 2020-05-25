@@ -6,7 +6,11 @@
 
 /* Global */
 .active {
-    @apply bg-indigo text-white transition ease-in duration-200;
+    @apply bg-black text-white font-bold transition ease-in duration-200 !important;
+}
+
+.active:hover {
+    @apply bg-opacity-75 transition ease-in duration-200 !important;
 }
 
 .primary {
