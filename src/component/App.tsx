@@ -11,7 +11,7 @@ function App() {
     <div className="wrapper flex flex-col w-screen h-screen">
       <Shell />
     </div>
-  );
+  )
 }
 
 export default App

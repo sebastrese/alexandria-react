@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { APPLICATION_SHORT_NAME } from '../../core/config';
 
 // Styles
 import './Shell.scss';
@@ -17,8 +16,6 @@ const Home = React.lazy(() => import('../home/Home'))
  * Shell Application's default shell
  */
 function Shell() {
-    document.title = `${APPLICATION_SHORT_NAME} - Home`
-
     // Search bar hook
     const [toggleSearch, setToggleSearch] = useState(true)
 
@@ -39,7 +36,6 @@ function Shell() {
     })
     
     return (
-        // Shell's Root wrapper
         <div className="flex flex-col h-full w-full lg:flex-row">
             {/** Desktop Appbar */}
             <AppBarDesktop isMobile={isMobile} />
