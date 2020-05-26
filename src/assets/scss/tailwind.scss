@@ -6,11 +6,10 @@
 
 /* Global */
 .active {
-    @apply bg-black text-white font-bold transition ease-in duration-200 !important;
-}
-
-.active:hover {
-    @apply bg-opacity-75 transition ease-in duration-200 !important;
+    @apply bg-indigo text-white font-bold transition ease-in duration-200 !important;
+    .material-icons-outlined {
+        font-family: 'Material Icons', sans-serif;
+    }
 }
 
 .primary {
@@ -27,16 +26,16 @@
 
 /* Form components */
 .field {
-    @apply rounded-lg py-2 px-4 block w-full appearance-none leading-normal flex flex-row items-center;
+    @apply rounded-lg py-2 px-4 block w-full appearance-none leading-normal flex flex-row items-center text-sm;
 }
 
 .input {
-    @apply bg-gray-400 bg-opacity-10;
+    @apply bg-gray-400 bg-opacity-0;
     color: var(--color-font);
 }
 
 .btn {
-    @apply rounded-lg p-1;
+    @apply rounded-lg p-1 text-sm;
     width: fit-content;
 }
 
@@ -76,7 +75,12 @@
 }
 
 .list-item {
-    @apply flex flex-row items-center rounded-lg p-2 text-gray-700 font-medium cursor-pointer w-full;
+    @apply flex flex-row items-center rounded-lg p-2 font-bold text-sm cursor-pointer w-full;
+    img {
+        height: 24px;
+        width: 24px;
+        border-radius: 32%;
+    }
 }
 
 .list-item:hover {
@@ -85,6 +89,14 @@
 
 .list-item:focus {
     @apply outline-none shadow-outline transition ease-in duration-200;
+}
+
+.list-item.active {
+    img {
+        border: 2px solid;
+        border-color: var(--color-background);
+        border-radius: 32%;
+    }
 }
 
 /* Dark mode */
@@ -113,6 +125,12 @@ html[data-theme="dark"] {
     
     .list-item:hover {
         background-color: var(--color-background-light);
+    }
+
+    .list-item.active {
+        img {
+            border-color: var(--color-font);
+        }
     }
 }
 

@@ -13,6 +13,7 @@ import { Switch } from 'react-router-dom';
 // TODO: Lazy loading with React lazy breaks layout
 // import Home from '../home/Home';
 const Home = React.lazy(() => import('../home/Home'))
+const Profile = React.lazy(() => import('../profile/Profile'))
 
 /**
  * Shell Application's default shell
@@ -48,7 +49,12 @@ function Shell() {
             {/** Content - Main Viewport */}
             <Switch>
                 <Route path='/events'>
-                    <Test></Test>
+                    <Test />
+                </Route>
+                <Route path='/me' exact={true}>
+                    <Suspense fallback={HomeSkeleton()} >
+                        <Profile />
+                    </Suspense>
                 </Route>
                 <Route exact path='/'>
                     <Suspense fallback={HomeSkeleton()}>

@@ -21,7 +21,7 @@ import { Button } from './Button';
  * @param {*} props.children Child nodes
  */
 export function FieldText(props: IProps) {
-    const iconTemplate = props.icon !== undefined ? <span className='icon mr-1'>{props.icon}</span> : null
+    const iconTemplate = props.icon !== undefined ? <span className='icon text-base mr-1'>{props.icon}</span> : null
 
     // Clear input
     // Clearing middleware (Chain-of-responsability pattern)
