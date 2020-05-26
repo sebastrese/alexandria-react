@@ -18,7 +18,7 @@ Button.propTypes = {
 
 /**
  * Button exports a button component.
- * @param {string} props.type Type, options: 'icon'/'i' or empty
+ * @param {string} props.type Type, options: 'icon'/'i', 'fab'/'f' or empty
  * @param {function} props.action Action handler
  * @param {string} props.className Extra CSS classes
  * @param {*} props.children Child nodes
@@ -29,6 +29,13 @@ export function Button(props: IProps) {
             return (
                 <button onClick={props.action} className={props.className !== undefined ? 'btn btn-icon ' + props.className : 
                 'btn btn-icon'}>
+                    {props.children}
+                </button>
+            )
+        case 'fab' || 'f':
+            return (
+                <button onClick={props.action} className={props.className !== undefined ? 'btn btn-fab ' + props.className : 
+                'btn btn-fab'}>
                     {props.children}
                 </button>
             )
@@ -105,6 +112,15 @@ export function ButtonLink(props: ILinkButtonProps) {
             return (
                 <Link to={path} className={match ? `${classType} 
                  ${className} active`: `${classType}${className}`}>
+                    {iconTemplate}
+                    {props.children}
+                </Link>
+            )
+        case 'fab' || 'f':
+            classType = 'btn btn-fab stroked-default flex justify-center items-center'
+            return (
+                <Link to={path} className={match ? `${classType} 
+                    ${className} active`: `${classType}${className}`}>
                     {iconTemplate}
                     {props.children}
                 </Link>

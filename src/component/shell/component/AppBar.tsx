@@ -109,12 +109,12 @@ export function AppBarMobile(props: IMobileProps) {
         return (
             <div className='appbar mobile flex flex-row justify-center items-center p-1 my-8 rounded-full z-10 fixed bottom-0 self-center max-w-screen-sm
                 shadow-2xl  lg:hidden'>
-                <ButtonLink className='stroke-default' type='icon' path='/' exact={true} icon='dashboard' />
-                <Button className='stroke-default' type='icon' action={props.toggleSearchHandler}>
+                <ButtonLink className='stroke-default' type='fab' path='/' exact={true} icon='dashboard' />
+                <Button className='stroke-default' type='fab' action={props.toggleSearchHandler}>
                     <span className='icon'>search</span>
                 </Button>
-                <ButtonLink className='stroke-default' type='icon' path='/explore' exact={true} icon='explore' />
-                <ButtonLink className='stroke-default' type='icon' path='/me'>
+                <ButtonLink className='stroke-default' type='fab' path='/explore' exact={true} icon='explore' />
+                <ButtonLink className='stroke-default' type='fab' path='/me'>
                     <img src={MockIdentity.picture} alt={`${MockIdentity}'s profile`} />
                 </ButtonLink>
             </div>

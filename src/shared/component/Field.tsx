@@ -31,7 +31,7 @@ export function FieldText(props: IProps) {
     }
 
     const clearIconTemplate = props.value !== '' ? 
-    <Button type='icon' className='stroke-default w-8 h-6 p-0 text-xs ml-1' action={onClearHandler}>
+    <Button type='icon' className='stroke-default ml-1' action={onClearHandler}>
         <span className='icon text-sm'>close</span>
     </Button> : null
 
