@@ -18,11 +18,8 @@ function Home() {
             <div className='viewport items-center animate__animated animate__fadeIn animate__faster 
             lg:py-4 lg:px-8'>
                 <div className='safezone w-full h-full lg:max-w-screen-xl'>
-                    <div>
-                        <h1 className='font-bold pb-2 text-3xl lg:hidden'>Alexandria</h1>
-                    </div>
                     <Banner heading={'Introducing '+APPLICATION_NAME} 
-                    description='Read, watch or listen.' />
+                    description='Share your knowledge with digital media you like.' />
                 </div>
             </div>
         </>

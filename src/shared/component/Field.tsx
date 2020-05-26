@@ -31,13 +31,13 @@ export function FieldText(props: IProps) {
     }
 
     const clearIconTemplate = props.value !== '' ? 
-    <Button type='icon' className='w-8 h-6 p-0 text-xs ml-1' action={onClearHandler}>
+    <Button type='icon' className='stroke-default w-8 h-6 p-0 text-xs ml-1' action={onClearHandler}>
         <span className='icon text-sm'>close</span>
     </Button> : null
 
     return (
-        <div className={props.className !== undefined ? 'field default focus:outline-none focus:shadow-outline ' + props.className : 
-                'field default focus:outline-none focus:shadow-outline'}>
+        <div className={props.className !== undefined ? 'field bg-default focus:outline-none focus:shadow-outline ' + props.className : 
+                'field focus:outline-none focus:shadow-outline'}>
             {iconTemplate}
             <input className='input w-full focus:outline-none' type='text' placeholder={props.placeholder} value={props.value} 
                 ref={props.inputRef} onChange={props.onChangeHandler} aria-label={props.label} aria-required={props.required} 

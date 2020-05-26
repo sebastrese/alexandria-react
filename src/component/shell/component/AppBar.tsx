@@ -48,8 +48,9 @@ export function AppBarDesktop(props: IDesktopProps) {
                     {/** Personal */}
                     <div className='flex flex-col my-3'>
                         <strong className='uppercase text-xs tracking-wider mb-2'>Me</strong>
+                        <ButtonLink path='/recent' input='Recent' icon='restore' />
                         <ButtonLink path='/me/collection' input='Collections' icon='bookmarks' />
-                        <ButtonLink path='/me/liked' input='Liked' icon='thumb_up' />
+                        <ButtonLink path='/liked' input='Liked Media' icon='thumb_up' />
                     </div>
 
                     {/** Misc */}
@@ -108,12 +109,14 @@ export function AppBarMobile(props: IMobileProps) {
         return (
             <div className='appbar mobile flex flex-row justify-center items-center p-1 my-8 rounded-full z-10 fixed bottom-0 self-center max-w-screen-sm
                 shadow-2xl  lg:hidden'>
-                <ButtonLink type='icon' path='/' exact={true} icon='dashboard' />
-                <Button type='icon' action={props.toggleSearchHandler}>
+                <ButtonLink className='stroke-default' type='icon' path='/' exact={true} icon='dashboard' />
+                <Button className='stroke-default' type='icon' action={props.toggleSearchHandler}>
                     <span className='icon'>search</span>
                 </Button>
-                <ButtonLink type='icon' path='/explore' exact={true} icon='explore' />
-                <ButtonLink type='icon' path='/me' icon='account_circle' />
+                <ButtonLink className='stroke-default' type='icon' path='/explore' exact={true} icon='explore' />
+                <ButtonLink className='stroke-default' type='icon' path='/me'>
+                    <img src={MockIdentity.picture} alt={`${MockIdentity}'s profile`} />
+                </ButtonLink>
             </div>
         )
     }

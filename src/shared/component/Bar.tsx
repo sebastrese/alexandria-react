@@ -46,7 +46,7 @@ export function SearchBar(props: IProps) {
                     fixed top-0 self-center max-w-screen-sm shadow-xl 
                     animate__animated animate__fadeInDown animate__faster lg:hidden'>
 
-                    <Button type='icon' action={closeBarHandler} className='h-10 w-10 text-lg'>
+                    <Button type='icon' action={closeBarHandler} className='stroke-default h-10 w-10 text-lg'>
                         <span className="icon">arrow_back</span>
                     </Button>
                     <FieldText className='ml-1 my-1 w-56 self-center' icon='search' placeholder='Search a category' 

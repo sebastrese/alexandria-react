@@ -27,13 +27,14 @@ export function Button(props: IProps) {
     switch(props.type) {
         case 'icon' || 'i':
             return (
-                <button onClick={props.action} className={props.className !== undefined ? 'btn btn-icon default ' + props.className : 'btn btn-icon default'}>
+                <button onClick={props.action} className={props.className !== undefined ? 'btn btn-icon ' + props.className : 
+                'btn btn-icon'}>
                     {props.children}
                 </button>
             )
         default:
             return (
-                <button onClick={props.action} className={props.className !== undefined ? 'btn default font-medium p-2 flex flex-row items-center truncate '+
+                <button onClick={props.action} className={props.className !== undefined ? 'btn font-medium p-2 flex flex-row items-center truncate '+
                     props.className : 'btn default font-medium p-2 flex flex-row items-center truncate'}>
                     {props.children}
                 </button>
@@ -82,7 +83,7 @@ export function ButtonLink(props: ILinkButtonProps) {
     const path = (props.path === undefined) ? '/' : props.path
 
     const iconClass = props.isMDI ? 'mdi' : 'material-icons-outlined'
-    let classType = 'list-item truncate'
+    let classType = 'list-item default truncate'
     // Avoid getting undefined on CSS classes
     const className = props.className === undefined ? '' : ' ' + props.className
     
@@ -100,11 +101,12 @@ export function ButtonLink(props: ILinkButtonProps) {
 
     switch (props.type) {
         case 'icon' || 'i':
-            classType = 'btn btn-icon default flex justify-center items-center'
+            classType = 'btn btn-icon stroked-default flex justify-center items-center'
             return (
                 <Link to={path} className={match ? `${classType} 
                  ${className} active`: `${classType}${className}`}>
                     {iconTemplate}
+                    {props.children}
                 </Link>
             )
         default:
