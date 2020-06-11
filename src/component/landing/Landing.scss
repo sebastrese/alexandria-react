@@ -1,3 +1,7 @@
+#logo {
+    background-color: var(--color-background-dark);
+}
+
 .brand-text {
     font-family: 'Muli', sans-serif;
 }
@@ -7,6 +11,10 @@
 }
 
 html[data-theme="dark"] {
+    #logo {
+        background-color: var(--color-background-light);
+    }
+
     .landing {
         background-color: var(--color-background-dark);
     }
