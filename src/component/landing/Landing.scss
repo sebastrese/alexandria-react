@@ -1,0 +1,13 @@
+.brand-text {
+    font-family: 'Muli', sans-serif;
+}
+
+.landing {
+    background-color: var(--color-background-light);
+}
+
+html[data-theme="dark"] {
+    .landing {
+        background-color: var(--color-background-dark);
+    }
+}

@@ -1,12 +1,12 @@
 /* Global components */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined');
 @import url('https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Muli:wght@400;500;600;700;800;900&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -15,7 +15,7 @@ body {
 }
 
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 code {
@@ -30,4 +30,10 @@ code {
 input {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
   Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (min-width: 1920px) and (max-height: 1080px) {
+  .safezone {
+      max-width: 100% !important;
+  }
 }
