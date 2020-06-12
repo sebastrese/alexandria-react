@@ -14,6 +14,9 @@ import { ReactComponent as WhyAlexa } from '../../assets/img/landing/whyalexa.sv
 import { ReactComponent as Blazing } from '../../assets/img/landing/blazing.svg';
 import { ReactComponent as Trends } from '../../assets/img/landing/trends.svg';
 import { ReactComponent as Docs } from '../../assets/img/landing/docs.svg';
+import { ReactComponent as Amazon } from '../../assets/img/landing/amazon.svg';
+import { ReactComponent as Google } from '../../assets/img/landing/google.svg';
+import { ReactComponent as Spotify } from '../../assets/img/landing/spotify.svg';
 
 export default function Landing() {
     return (
@@ -22,7 +25,7 @@ export default function Landing() {
             <div className='landing flex flex-row items-center w-full p-4 lg:py-12 lg:px-20' style={{position: 'fixed'}}>
                 <div className='flex flex-row items-center'>
                     <span className='h-12 w-12 rounded-full mr-3' id='logo' />
-                    <a href='#' className='font-black text-2xl brand-text'>Alexandria</a>
+                    <a href='#home' className='font-black text-2xl brand-text'>Alexandria</a>
                 </div>
                 <div className='hidden flex-row flex-wrap items-center font-semibold lg:flex lg:mx-8 lg:text-lg'>
                     <a href='#why' className='mx-4'>Why</a>
@@ -49,14 +52,14 @@ export default function Landing() {
                     {/** Main title */}
                     <section id='home' className='flex flex-row items-center justify-center h-full w-full max-w-full 
                     flex-wrap-reverse pt-20 lg:flex-row md:pt-32'>
-                        <div className='flex flex-col self- text-lg p-8 pt-4 pb-20 lg:w-3/12'>
-                            <span className='text-5xl font-black break-words whitespace-pre brand-text lg:text-6xl'>
+                        <div className='flex flex-col self- text-lg p-8 pt-4 pb-16 lg:w-3/12'>
+                            <span id='heading-text' className='text-5xl font-black break-words whitespace-pre brand-text md:text-6xl'>
                                 Knowledge <br/>
                                 for <br/>
                                 everyone
                             </span>
-                            <span className='my-6 text-xl leading-loose break-words'>
-                                <b>Alexandria</b> is an streaming platform where you can
+                            <span className='my-6 text-xl font-medium leading-loose break-words'>
+                                <b className='font-black'>Alexandria</b> is an streaming platform where you can
                                 share knowledge through media you like.
                             </span>
                             <Button className='flat-primary rounded-full px-3 font-semibold text-base lg:px-5' action={() => {}}>
@@ -72,7 +75,8 @@ export default function Landing() {
             </div>
             {/** Main container */}
             <div role='main' className='flex flex-col justify-center items-center w-full m-0'>
-                {/** Why Alexandria */}
+
+                {/** Why */}
                 <section id='why' className='flex flex-col md:flex-row flex-wrap w-full items-center justify-evenly text-white bg-indigo p-8 pb-20'>
                     <div className='flex flex-col lg:w-5/12'>
                         <span className='text-5xl font-extrabold brand-text'>Why Alexandria</span>
@@ -93,6 +97,8 @@ export default function Landing() {
 
                     <WhyAlexa className='w-full h-auto md:w-1/2 lg:w-3/12' />
                 </section>
+
+                {/** Features */}
                 <section id='features' className='landing flex flex-col w-full items-center pt-24'>
                     <span className='text-brand font-black text-5xl'>Features</span>
                     <span className='w-24 mt-4 mb-16' style={{border: '2px solid', borderColor: 'var(--color-font)'}} />
@@ -142,9 +148,54 @@ export default function Landing() {
                         </div>
                     </div>
                 </section>
-                <section id='powered' className='landing flex flex-col w-full items-center pt-24' style={{color: '#e0e0e0'}}>
+
+                {/** Powered */}
+                <section id='powered' className='landing flex flex-col w-full items-center pt-24 pb-24' style={{color: '#e0e0e0'}}>
                     <span className='text-brand font-black text-5xl'>Powered</span>
-                    <span className='w-24 mt-4 mb-16' style={{border: '2px solid', borderColor: '#e0e0e0'}} />
+                    <span className='w-24 mt-4 mb-8' style={{border: '2px solid', borderColor: '#e0e0e0'}} />
+                    <div className='flex flex-row flex-wrap w-full justify-center items-center px-16'>
+                        <Amazon className='w-full h-auto md:w-3/12 lg:w-1/6' />
+                        <Google className='w-full h-auto my-8 md:py-0 md:mx-8 md:w-3/12 lg:w-1/6' />
+                        <Spotify className='w-full h-auto md:w-3/12 lg:w-1/6' />
+                    </div>
+                </section>
+
+                {/** Footer */}
+                <section id='about' className='footer flex flex-col w-full'>
+                    <div className='flex flex-col flex-wrap px-16 py-12 w-full'>
+                        <div className='flex flex-row items-center'>
+                            <span className='h-12 w-12 rounded-full mr-3' id='logo' />
+                            <a href='/landing' className='font-black text-2xl brand-text'>Alexandria</a>
+                        </div>
+                        <div className='flex flex-row flex-wrap'>
+                            <div className='flex flex-row my-8'>
+                                <div>
+                                    <span className='text-brand text-xl'><b className='font-extrabold'>Explore</b></span>
+                                    <ul className='text-lg'>
+                                        <li className='mt-4'><a href='#home'>Home</a></li>
+                                        <li className='my-2'><a href='#why'>Why</a></li>
+                                        <li><a href='#features'>Features</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='flex flex-row my-8'>
+                                <div>
+                                    <span className='text-brand text-xl'><b className='font-extrabold'>Explore</b></span>
+                                    <ul className='text-lg'>
+                                        <li className='mt-4'><a href='#home'>Home</a></li>
+                                        <li className='my-2'><a href='#why'>Why</a></li>
+                                        <li><a href='#features'>Features</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col flex-wrap text-center w-full px-16 py-10 bg-indigo md:flex-row'>
+                        <span><b className='font-black'>The Alexandria Foundation</b> © 2020 · All rights reserved</span>
+                        <span className='flex-auto' />
+                        <Link className='my-4 md:my-0 md:mx-8' to='/privacy'>Privacy Policy</Link>
+                        <Link to='/service'>Terms of Service</Link>
+                    </div>
                 </section>
             </div>
         </div>

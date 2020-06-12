@@ -16,6 +16,7 @@ html.theme-transition *:after {
 }
 
 html {
+    scroll-behavior: smooth;
     --color-primary: #3d5afe;
     --color-accent: #FCE4EC;
     --color-danger: #d50000;
@@ -30,7 +31,10 @@ html {
     --color-background-dark: #e0e0e0;
     --color-background-light: #ffffff;
     --color-background: #fafafa;
-    scroll-behavior: smooth;
+
+    --color-background-dark-alt: #18191a;
+    --color-background-light-alt: rgba(255,255,255, 0.1);
+    --color-background-alt: #242526;
 }
 
 html[data-theme="dark"] {
@@ -44,6 +48,10 @@ html[data-theme="dark"] {
     --color-background-dark: #18191a;
     --color-background-light: rgba(255,255,255, 0.1);
     --color-background: #242526;
+
+    --color-background-dark-alt: #e0e0e0;
+    --color-background-light-alt: #ffffff;
+    --color-background-alt: #fafafa;
 }
 
 :root {
