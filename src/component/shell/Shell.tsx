@@ -14,6 +14,7 @@ import { Switch } from 'react-router-dom';
 // import Home from '../home/Home';
 const Home = React.lazy(() => import('../home/Home'))
 const Profile = React.lazy(() => import('../profile/Profile'))
+const Explore = React.lazy(() => import('../explore/Explore'))
 
 /**
  * Shell Application's default shell
@@ -60,6 +61,11 @@ function Shell() {
                     <Suspense fallback={HomeSkeleton()}>
                         <Home />
                     </Suspense>
+                </Route>
+                <Route path='/explore'>
+                    <Suspense fallback={HomeSkeleton()}>
+                        <Explore />    
+                    </Suspense>   
                 </Route>
             </Switch>
 
