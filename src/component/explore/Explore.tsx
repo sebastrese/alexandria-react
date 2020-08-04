@@ -1,7 +1,9 @@
-import React,{ useState } from 'react';
+import React from 'react';
 
 //Component
 import { SearchBar } from '../../shared/component/Bar';
+import { Banner } from '../../shared/component/Banner';
+import { Card } from '../../shared/component/Card';
 
 function Explore(){
     return(
@@ -27,8 +29,13 @@ function Explore(){
                     </button>
                 </div>
             </div>
-            <div className='grid grid-flow-col grid-cols-3'>
-
+            <div className='grid grid-flow-row grid-cols-3'>
+                <div className='w-2/3'>
+                    <Banner heading='Heading Example' description='Description Example'/>
+                </div>
+                <div style={{fontFamily:'Lato', fontSize:'16px', fontWeight:'bold'}}>
+                    <Card type='small' image='https://www.models-resource.com/resources/big_icons/16/15695.png' className='w-1/3'/>Donko Kong
+                </div>
             </div>
         </div>
     )
