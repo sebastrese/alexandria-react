@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // Components
-import Shell from './shell/Shell';
+import Shell from "./shell/Shell";
 
 // Styles
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Shell />
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
