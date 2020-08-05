@@ -34,7 +34,7 @@ function Explore(){
                     <Banner heading='Heading Example' description='Description Example'/>
                 </div>
                 <div style={{fontFamily:'Lato', fontSize:'16px', fontWeight:'bold'}}>
-                    <Card type='small' image='https://www.models-resource.com/resources/big_icons/16/15695.png' className='w-1/3'/>Donko Kong
+                    <Card type='rounded' image='https://profiles.howard.edu/sites/profiles.howard.edu/files/yakubu.jpg' className='w-1/3'/>Gustavo Fring
                 </div>
             </div>
         </div>
