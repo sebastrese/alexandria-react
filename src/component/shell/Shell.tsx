@@ -15,7 +15,7 @@ import { Switch } from "react-router-dom";
 const Home = React.lazy(() => import("../home/Home"));
 const Profile = React.lazy(() => import("../profile/Profile"));
 const MyProfile = React.lazy(() => import("../myProfile/MyProfile"));
-const Explore = React.lazy(() => import('../explore/Explore'))
+const Discover = React.lazy(() => import('../discover/discover'))
 const Notifications = React.lazy(() =>
   import("../notifications/Notifications")
 );
@@ -80,6 +80,11 @@ function Shell() {
         <Route exact path="/">
           <Suspense fallback={HomeSkeleton()}>
             <Home />
+          </Suspense>
+        </Route>
+        <Route exact path="/explore">
+          <Suspense fallback={HomeSkeleton()}>
+            <Discover />
           </Suspense>
         </Route>
       </Switch>
