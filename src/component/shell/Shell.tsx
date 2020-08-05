@@ -15,7 +15,7 @@ import { Switch } from "react-router-dom";
 const Home = React.lazy(() => import("../home/Home"));
 const Profile = React.lazy(() => import("../profile/Profile"));
 const MyProfile = React.lazy(() => import("../myProfile/MyProfile"));
-const Discover = React.lazy(() => import("../discover/discover"))
+const Discover = React.lazy(() => import("../discover/Discover"))
 const Notifications = React.lazy(() =>
   import("../notifications/Notifications")
 );
