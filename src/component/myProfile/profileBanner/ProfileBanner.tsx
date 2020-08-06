@@ -20,7 +20,7 @@ function ProfileBanner(props: IProps) {
     >
       <div className="safezone w-full h-full lg:max-w-screen-xl items-center">
         <div className="banner object-cover">
-          <div className="relative h-56 bg-red-500 pb-64">
+          <div className=" relative h-56 bg-red-500 pb-64">
             <img
               src={props.image}
               className="absolute h-full w-full object-cover"
