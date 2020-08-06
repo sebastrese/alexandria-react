@@ -33,8 +33,9 @@ function Explore(){
                 <div className='w-2/3'>
                     <Banner heading='Heading Example' description='Description Example'/>
                 </div>
-                <div style={{fontFamily:'Lato', fontSize:'16px', fontWeight:'bold'}}>
-                    <Card type='rounded' image='https://profiles.howard.edu/sites/profiles.howard.edu/files/yakubu.jpg' className='w-1/3'/>Gustavo Fring
+                <div style={{fontFamily:'Lato, Arial', fontSize:'16px', fontWeight:'bold'}} className='space-y-6'>
+                    <Card type='rounded' image='https://profiles.howard.edu/sites/profiles.howard.edu/files/yakubu.jpg'/>Gustavo Fring
+                    <Card type='medium' image='https://wallpaperaccess.com/full/1295556.jpg' className='w-1/3'/>Outliers: The st...
                 </div>
             </div>
         </div>

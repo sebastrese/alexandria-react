@@ -27,7 +27,7 @@ export function Card(props: IProps) {
         case 'rounded' || 'rnd':
             return(
             <div className={props.className}>
-                <img src={props.image} alt={props.alt} className='rounded-full w-24 h-24 shadow-lg' />
+                <img src={props.image} alt={props.alt} className='rounded-full w-32 h-32 shadow-lg' />
                 {props.children}
             </div>)
         default:

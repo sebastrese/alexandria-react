@@ -24,6 +24,7 @@ function ProfileBanner(props: IProps) {
             <img
               src={props.image}
               className="absolute h-full w-full object-cover"
+              alt=''
             ></img>
           </div>
         </div>
@@ -32,6 +33,7 @@ function ProfileBanner(props: IProps) {
             <img
               src={props.pic}
               className="rounded-full w-40 h-40 shadow-lg lg:max-w-screen-xl object-cover border-solid border-8 border-white-600"
+              alt=''
             />
           </div>
 

@@ -48,13 +48,10 @@ export function AppBarDesktop(props: IDesktopProps) {
           {/** Initial content */}
           <div className="flex flex-col my-3">
             <ButtonLink path="/" exact={true} icon="dashboard" input="Home" />
-            <ButtonLink
-              path="/explore"
-              exact={false}
-              icon="explore"
-              input="Explore"
-            />
+            <ButtonLink path="/explore" exact={false} icon="explore" input="Explore" />
+            <ButtonLink path='/discover' icon="room" input="Discover" />
           </div>
+          
 
           {/** Personal */}
           <div className="flex flex-col my-3">
@@ -63,17 +60,9 @@ export function AppBarDesktop(props: IDesktopProps) {
             </strong>
             <ButtonLink path="/myProfile" input="My Profile" icon="person" />
             <ButtonLink path="/recent" input="Recent" icon="restore" />
-            <ButtonLink
-              path="/me/collection"
-              input="Collections"
-              icon="bookmarks"
-            />
+            <ButtonLink path="/me/collection" input="Collections" icon="bookmarks"/>
             <ButtonLink path="/liked" input="Liked Media" icon="thumb_up" />
-            <ButtonLink
-              path="/notifications"
-              input="Notifications"
-              icon="notifications"
-            />
+            <ButtonLink path="/notifications" input="Notifications" icon="notifications"/>
           </div>
 
           {/** Misc */}

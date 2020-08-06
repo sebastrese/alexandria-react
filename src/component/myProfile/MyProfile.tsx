@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../shared/component/Button";
 import Banner from "./profileBanner/ProfileBanner";
 function MyProfile() {
   return (

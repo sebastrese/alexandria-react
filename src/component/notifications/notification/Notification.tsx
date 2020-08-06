@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import "./Notification.scss";
 // Component dependecies
 import { Card } from "../../../shared/component/Card";
-import { ReactComponent as Placeholder } from "../../../assets/img/Placeholder_img.svg";
 
 /**
  * @param {string} props.image Background image URL
