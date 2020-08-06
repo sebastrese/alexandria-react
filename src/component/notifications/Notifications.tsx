@@ -10,7 +10,7 @@ function Notifications() {
       >
         <div className="safezone w-full h-full lg:max-w-screen-xl p-10">
           <h1 className="p-2 text-3xl font-bold">Notifications</h1>
-          <div className="safezone w-full h-full lg:max-w-screen-xl">
+          <div className="safezone w-full lg:max-w-screen-xl">
             <Notification
               heading={"Name placeholder"}
               description="Time placeholder"

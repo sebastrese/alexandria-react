@@ -22,8 +22,8 @@ import { ReactComponent as Placeholder } from "../../../assets/img/Placeholder_i
 function Notification(props: IProps) {
   return (
     <>
-      <Card className="banner w-full text-white">
-        <div className="bg-mask rounded-lg flex flex-col w-full h-full">
+      <Card className=" text-white">
+        <div className="bg-mask rounded-lg flex flex-col w-full ">
           <span className="flex-grow" />
           <div className="flex flex-row items-center pl-8">
             <img
