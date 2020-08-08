@@ -42,7 +42,7 @@ function Player(props: IProps) {
         </div>
       </div>
 
-      <div className="col-span-2 bg-red-700 w-full h-full lg:max-w-screen-xl">
+      <div className="col-span-2 bg-red-700 w-full h-screen lg:max-w-screen-xl">
         <img src={props.pic} className="h-full w-full object-cover"></img>
       </div>
     </div>

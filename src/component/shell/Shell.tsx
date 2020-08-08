@@ -79,7 +79,11 @@ function Shell() {
         </Route>
         <Route exact path="/player">
           <Suspense fallback={HomeSkeleton()}>
-            <Player />
+            <Player
+              title="Flores"
+              pic="https://images.unsplash.com/photo-1596820190957-96d0ca17471c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              autor="Sebastian"
+            />
           </Suspense>
         </Route>
         <Route exact path="/">
