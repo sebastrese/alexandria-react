@@ -18,6 +18,7 @@ const MyProfile = React.lazy(() => import("../myProfile/MyProfile"));
 const Notifications = React.lazy(() =>
   import("../notifications/Notifications")
 );
+const Player = React.lazy(() => import("../mediaPlayer/Player"));
 
 /**
  * Shell Application's default shell
@@ -74,6 +75,11 @@ function Shell() {
         <Route path="/notifications" exact={true}>
           <Suspense fallback={HomeSkeleton()}>
             <Notifications />
+          </Suspense>
+        </Route>
+        <Route exact path="/player">
+          <Suspense fallback={HomeSkeleton()}>
+            <Player />
           </Suspense>
         </Route>
         <Route exact path="/">

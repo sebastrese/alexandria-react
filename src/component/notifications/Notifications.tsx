@@ -15,16 +15,19 @@ function Notifications() {
               heading={"Name placeholder"}
               description="Time placeholder"
               image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+              content="/player"
             />
             <Notification
               heading={"Donkey Kong has posted a book"}
               description="Time placeholder"
               image="https://i.imgur.com/986Wonz_d.webp?maxwidth=728&fidelity=grand"
+              content="/book"
             />
             <Notification
               heading={"Dany Devito has posted a podcast"}
               description="Time placeholder"
               image="https://cdn2.excelsior.com.mx/media/styles/large/public/pictures/2019/03/05/2109136.jpg"
+              content="/podcast"
             />
           </div>
         </div>

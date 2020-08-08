@@ -8,6 +8,7 @@ function Home() {
           heading={"Name placeholder"}
           description="Time placeholder"
           image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+          content="/video"
         />
       </div>
       <div className="flex flex-col md:flex-row  w-full justify-center items-center p-8 lg:w-1/2 lg:flex-row lg:flex-wrap">
@@ -15,6 +16,7 @@ function Home() {
           heading={"Name placeholder"}
           description="Time placeholder"
           image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+          content="/video"
         />
       </div>
       <div className="flex flex-col md:flex-row  w-full justify-center items-center p-8 lg:w-1/2 lg:flex-row lg:flex-wrap">
@@ -22,6 +24,7 @@ function Home() {
           heading={"Name placeholder"}
           description="Time placeholder"
           image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+          content="/video"
         />
       </div>
       <div className="flex flex-col md:flex-row  w-full justify-center items-center p-8 lg:w-1/2 lg:flex-row lg:flex-wrap">
@@ -29,6 +32,7 @@ function Home() {
           heading={"Name placeholder"}
           description="Time placeholder"
           image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+          content="/video"
         />
       </div>
     </div>
