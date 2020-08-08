@@ -19,6 +19,9 @@ const Notifications = React.lazy(() =>
   import("../notifications/Notifications")
 );
 const Player = React.lazy(() => import("../mediaPlayer/Player"));
+const VideoPlayer = React.lazy(() =>
+  import("../mediaPlayer/videoplayer/VideoPlayer")
+);
 
 /**
  * Shell Application's default shell
@@ -58,40 +61,47 @@ function Shell() {
       />
 
       {/** Content - Main Viewport */}
-      <Switch>
-        <Route path="/events">
-          <Test />
-        </Route>
-        <Route path="/me" exact={true}>
-          <Suspense fallback={HomeSkeleton()}>
-            <Profile />
-          </Suspense>
-        </Route>
-        <Route path="/myProfile" exact={true}>
-          <Suspense fallback={HomeSkeleton()}>
-            <MyProfile />
-          </Suspense>
-        </Route>
-        <Route path="/notifications" exact={true}>
-          <Suspense fallback={HomeSkeleton()}>
-            <Notifications />
-          </Suspense>
-        </Route>
-        <Route exact path="/player">
-          <Suspense fallback={HomeSkeleton()}>
-            <Player
-              title="Flores"
-              pic="https://images.unsplash.com/photo-1596820190957-96d0ca17471c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-              autor="Sebastian"
-            />
-          </Suspense>
-        </Route>
-        <Route exact path="/">
-          <Suspense fallback={HomeSkeleton()}>
-            <Home />
-          </Suspense>
-        </Route>
-      </Switch>
+      <div className="overflow-y-scroll w-full">
+        <Switch>
+          <Route path="/events">
+            <Test />
+          </Route>
+          <Route path="/me" exact={true}>
+            <Suspense fallback={HomeSkeleton()}>
+              <Profile />
+            </Suspense>
+          </Route>
+          <Route path="/myProfile" exact={true}>
+            <Suspense fallback={HomeSkeleton()}>
+              <MyProfile />
+            </Suspense>
+          </Route>
+          <Route path="/notifications" exact={true}>
+            <Suspense fallback={HomeSkeleton()}>
+              <Notifications />
+            </Suspense>
+          </Route>
+          <Route exact path="/player">
+            <Suspense fallback={HomeSkeleton()}>
+              <Player
+                title="Flores"
+                pic="https://images.unsplash.com/photo-1596820190957-96d0ca17471c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                autor="Sebastian"
+              />
+            </Suspense>
+          </Route>
+          <Route path="/video" exact={true}>
+            <Suspense fallback={HomeSkeleton()}>
+              <VideoPlayer />
+            </Suspense>
+          </Route>
+          <Route exact path="/">
+            <Suspense fallback={HomeSkeleton()}>
+              <Home />
+            </Suspense>
+          </Route>
+        </Switch>
+      </div>
 
       {/** Mobile Appbar */}
       <AppBarMobile
