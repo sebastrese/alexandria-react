@@ -28,7 +28,7 @@ function Notification(props: IProps) {
             <div className="flex flex-row items-center pl-8">
               <img
                 src={props.image}
-                className="rounded-full w-24 h-24 shadow-lg"
+                className="rounded-full w-24 h-24 shadow-lg object-cover"
               />
               <div className="flex flex-col p-8">
                 <span className="text-3xl font-bold mb-1 lg:text-4xl">

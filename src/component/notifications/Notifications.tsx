@@ -12,20 +12,20 @@ function Notifications() {
           <h1 className="p-2 text-3xl font-bold">Notifications</h1>
           <div className="safezone w-full lg:max-w-screen-xl">
             <Notification
-              heading={"Name placeholder"}
-              description="Time placeholder"
-              image="https://images.unsplash.com/photo-1587327903256-2265e70b5660?fit=crop&w=1950&q=80"
+              heading={"Josie Molina posted a new video"}
+              description="10 minutes ago"
+              image="https://cdn.pixabay.com/photo/2017/09/01/21/53/blue-2705642_960_720.jpg"
               content="/player"
             />
             <Notification
-              heading={"Donkey Kong has posted a book"}
-              description="Time placeholder"
-              image="https://i.imgur.com/986Wonz_d.webp?maxwidth=728&fidelity=grand"
+              heading={"Asad Mitchell has posted a book"}
+              description="2 hours ago"
+              image="https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_960_720.jpg"
               content="/book"
             />
             <Notification
               heading={"Dany Devito has posted a podcast"}
-              description="Time placeholder"
+              description="1 day ago"
               image="https://cdn2.excelsior.com.mx/media/styles/large/public/pictures/2019/03/05/2109136.jpg"
               content="/podcast"
             />
