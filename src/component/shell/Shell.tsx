@@ -19,6 +19,16 @@ const Notifications = React.lazy(() =>
   import("../notifications/Notifications")
 );
 const Player = React.lazy(() => import("../mediaPlayer/Player"));
+const PlayerVideo = React.lazy(() =>
+  import("../mediaPlayer/videoplayer/PlayerVideo")
+);
+const PlayerAudio = React.lazy(() =>
+  import("../mediaPlayer/audioplayer/PlayerAudio")
+);
+const PlayerText = React.lazy(() =>
+  import("../mediaPlayer/textplayer/PlayerText")
+);
+const Explore = React.lazy(() => import("../explore/Explore"));
 const VideoPlayer = React.lazy(() =>
   import("../mediaPlayer/videoplayer/VideoPlayer")
 );
@@ -71,6 +81,11 @@ function Shell() {
               <Profile />
             </Suspense>
           </Route>
+          <Route path="/explore" exact={true}>
+            <Suspense fallback={HomeSkeleton()}>
+              <Explore />
+            </Suspense>
+          </Route>
           <Route path="/myProfile" exact={true}>
             <Suspense fallback={HomeSkeleton()}>
               <MyProfile />
@@ -87,6 +102,33 @@ function Shell() {
                 title="Flowers"
                 pic="https://images.unsplash.com/photo-1596820190957-96d0ca17471c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
                 autor="Josie Molina"
+              />
+            </Suspense>
+          </Route>
+          <Route exact path="/playerVideo">
+            <Suspense fallback={HomeSkeleton()}>
+              <PlayerVideo
+                title="Soy un video"
+                pic="https://images.unsplash.com/photo-1596820190957-96d0ca17471c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                autor="Josie Molina"
+              />
+            </Suspense>
+          </Route>
+          <Route exact path="/playerAudio">
+            <Suspense fallback={HomeSkeleton()}>
+              <PlayerAudio
+                title="Soy un audio"
+                pic="https://img.discogs.com/YU14B_HIMqVWhiud--77N98lzRg=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-5169838-1469414954-6864.jpeg.jpg"
+                autor="Ayasa"
+              />
+            </Suspense>
+          </Route>
+          <Route exact path="/playerText">
+            <Suspense fallback={HomeSkeleton()}>
+              <PlayerText
+                title="Soy un texto"
+                pic="https://img.discogs.com/YU14B_HIMqVWhiud--77N98lzRg=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-5169838-1469414954-6864.jpeg.jpg"
+                autor="Dani Devito"
               />
             </Suspense>
           </Route>

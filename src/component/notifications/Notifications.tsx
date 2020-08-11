@@ -15,19 +15,19 @@ function Notifications() {
               heading={"Josie Molina posted a new video"}
               description="10 minutes ago"
               image="https://cdn.pixabay.com/photo/2017/09/01/21/53/blue-2705642_960_720.jpg"
-              content="/player"
+              content="/playerVideo"
             />
             <Notification
-              heading={"Asad Mitchell has posted a book"}
+              heading={"Ayasa updated a new song"}
               description="2 hours ago"
-              image="https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_960_720.jpg"
-              content="/book"
+              image="https://img.discogs.com/YU14B_HIMqVWhiud--77N98lzRg=/600x399/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-5169838-1469414954-6864.jpeg.jpg"
+              content="/playerAudio"
             />
             <Notification
-              heading={"Dany Devito has posted a podcast"}
+              heading={"Dany Devito has posted a new book"}
               description="1 day ago"
               image="https://cdn2.excelsior.com.mx/media/styles/large/public/pictures/2019/03/05/2109136.jpg"
-              content="/podcast"
+              content="/playerText"
             />
           </div>
         </div>
